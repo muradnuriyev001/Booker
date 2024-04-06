@@ -30,9 +30,15 @@
     font-size: 40px;
     height: 40px;
     cursor: pointer;
+    justify-self: end;
   }
 
   &__logo {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     img {
       width: 50%;
     }
@@ -44,6 +50,7 @@
       a {
         margin: 0px 10px;
         transition: 0.3s;
+        font-size: 18px;
         &:hover {
           color: var(--orange);
         }
@@ -54,9 +61,21 @@
   &__group {
     a {
       display: flex;
+      position: relative;
+      &::before {
+        content: attr(data-count);
+        color: white;
+        background-color: var(--orange);
+        padding: 1px 6px;
+        border-radius: 25px;
+        position: absolute;
+        font-size: 10px;
+        top: 60%;
+        left: -5%;
+      }
     }
   }
-  
+
   &__wishlist {
     margin-right: 60px;
   }
@@ -84,8 +103,8 @@
 
 @media only screen and (max-width: 1023px) {
   .header__bottom {
-    padding: 25px 0px;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px 30px;
+    grid-template-columns: 1fr 1fr .2fr;
     div {
       svg {
         font-size: 23px;
@@ -97,6 +116,15 @@
     .header__bottom__wishlist {
       margin-right: 40px;
     }
+  }
+
+  .header__bottom__logo {
+    a {
+      justify-content: start;
+    }
+  }
+  .header__bottom__group {
+    justify-self: end;
   }
 
   .header__bottom__navigations {
@@ -128,7 +156,7 @@
 
 @media only screen and (max-width: 600px) {
   .header__bottom {
-    grid-template-columns: 2.5fr 0.5fr 1fr;
+    grid-template-columns: 2fr 1fr .4fr;
     div {
       svg {
         font-size: 22px;

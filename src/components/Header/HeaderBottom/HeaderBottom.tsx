@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import logo from "../../../assets/booker-icon.png";
 
 import { FaRegHeart } from "react-icons/fa";
-import { FaBasketShopping } from "react-icons/fa6";
+import { RiShoppingBasketLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 
 const HeaderBottom = () => {
@@ -29,6 +29,9 @@ const HeaderBottom = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [location]);
+
+  const wishlistData = 8;
+  const cartData = 3;
 
   return (
     <div className={c.header__bottom}>
@@ -59,14 +62,14 @@ const HeaderBottom = () => {
 
       <div className={c.header__bottom__group}>
         <div className={c.header__bottom__wishlist}>
-          <NavLink to={"/wishlist"}>
+          <NavLink data-count={wishlistData} to={"/wishlist"}>
             <FaRegHeart />
             <p>Wishlist</p>
           </NavLink>
         </div>
         <div className={c.header__bottom__cart}>
-          <NavLink to={"/cart"}>
-            <FaBasketShopping />
+          <NavLink data-count={cartData} to={"/cart"}>
+            <RiShoppingBasketLine />
             <p>Cart</p>
           </NavLink>
         </div>
