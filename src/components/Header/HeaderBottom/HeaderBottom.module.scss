@@ -6,7 +6,6 @@
   grid-template-columns: 1fr 3fr 1fr;
   place-items: center;
   position: relative;
-
   div {
     display: flex;
     align-items: center;
@@ -52,6 +51,12 @@
     }
   }
 
+  &__group {
+    a {
+      display: flex;
+    }
+  }
+  
   &__wishlist {
     margin-right: 60px;
   }
