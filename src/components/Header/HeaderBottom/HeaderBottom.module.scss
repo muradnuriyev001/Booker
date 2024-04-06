@@ -149,7 +149,7 @@
   }
   .header__bottom__logo {
     img {
-      width: 75%;
+      width: 50%;
     }
   }
 }
@@ -172,6 +172,12 @@
   .header__bottom__cart {
     p {
       display: none;
+    }
+  }
+
+  .header__bottom__logo {
+    img {
+      width: 60%;
     }
   }
 }
