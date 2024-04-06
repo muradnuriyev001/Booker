@@ -8,6 +8,8 @@ import {
   FaSquareReddit,
 } from "react-icons/fa6";
 
+import paymentsLogo from "../../assets/Footer/payments.png";
+
 const Footer = () => {
   return (
     <div className={c.footer}>
@@ -56,6 +58,9 @@ const Footer = () => {
             <FaSquareFacebook />
             <FaSquareTwitter />
             <FaSquareReddit />
+          </div>
+          <div className={c.payments}>
+            <img src={paymentsLogo} alt="" draggable="false" />
           </div>
         </div>
       </div>

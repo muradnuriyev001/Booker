@@ -39,8 +39,14 @@
     .logos {
       margin-top: 10px;
     }
+    .payments {
+      margin-top: 30px;
+      img {
+        width: 100%;
+      }
+    }
     svg {
-      font-size: 35px;
+      font-size: 27px;
       margin-right: 5px;
       cursor: pointer;
     }
@@ -93,6 +99,13 @@
       p:nth-child(3) {
         font-size: 25px;
         font-weight: 800;
+      }
+    }
+    &__4 {
+      .payments {
+        img {
+          width: 100%;
+        }
       }
     }
   }
