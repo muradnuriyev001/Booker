@@ -1,0 +1,19 @@
+import c from "./NotFound.module.scss";
+import { NavLink } from "react-router-dom";
+
+import gif from "../../assets/NotFound/notfound.gif";
+
+const NotFound = () => {
+  return (
+    <div className={c.notfound}>
+      <img src={gif} alt="" draggable="false" />
+      <p>
+        Oops! Looks like this page got lost in the stacks. Why not explore our
+        shelves for other captivating reads?
+      </p>
+      <NavLink to={"/"}>Back To Home</NavLink>
+    </div>
+  );
+};
+
+export default NotFound;
