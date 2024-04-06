@@ -60,11 +60,15 @@ const HeaderBottom = () => {
       <div className={c.header__bottom__group}>
         <div className={c.header__bottom__wishlist}>
           <FaRegHeart />
-          <p>Wishlist</p>
+          <NavLink to={"/wishlist"}>
+            <p>Wishlist</p>
+          </NavLink>
         </div>
         <div className={c.header__bottom__cart}>
           <FaBasketShopping />
-          <p>Cart</p>
+          <NavLink to={"/cart"}>
+            <p>Cart</p>
+          </NavLink>
         </div>
       </div>
 
