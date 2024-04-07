@@ -33,6 +33,11 @@ a {
   --orange: #eb5e37;
 }
 
+::selection {
+  color: var(--orange);
+  background-color: var(--gray2);
+}
+
 /* Scrollbar settings*/
 ::-webkit-scrollbar {
   width: 4px;
