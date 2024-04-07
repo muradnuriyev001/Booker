@@ -2,7 +2,6 @@
   min-height: 400px;
   padding: 0px 200px !important;
   margin: 50px 0px !important;
-  background-color: var(--white);
 }
 
 .swiperSlide {
@@ -21,6 +20,9 @@
     font-size: 20px;
     margin: 25px 0px;
     padding: 0px 200px;
+  }
+  p:nth-child(3){
+    color: rgb(120, 120, 120);
   }
 }
 
