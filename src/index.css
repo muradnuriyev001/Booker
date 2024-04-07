@@ -31,6 +31,8 @@ a {
   --gray2: #242424cc;
   --black: #242424;
   --orange: #eb5e37;
+
+  --swiper-pagination-color: var(--gray2);
 }
 
 ::selection {
