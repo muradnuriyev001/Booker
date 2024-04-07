@@ -34,6 +34,7 @@
     border: none;
     color: white;
     cursor: pointer;
+    transition: .5s all;
     &:hover {
       background-color: orangered;
     }
@@ -124,7 +125,7 @@
   .subscribe {
     h2 {
         font-size: 20px;
-        width: 200px;
+        width: 100%;
       }
     button {
       padding: 10px;
