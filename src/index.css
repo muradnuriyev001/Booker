@@ -35,7 +35,7 @@ a {
 
 ::selection {
   color: var(--orange);
-  background-color: var(--gray2);
+  background-color: var(--black);
 }
 
 /* Scrollbar settings*/
