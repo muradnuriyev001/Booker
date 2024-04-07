@@ -1,3 +1,4 @@
+import Subscribe from "../../components/Subscribe/Subscribe";
 import usePageTitle from "../../hooks/usePageTitle";
 import HomeSearch from "./HomeSearch/HomeSearch";
 import HomeServices from "./HomeServices/HomeServices";
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <HomeSearch />
       <HomeServices />
+      <Subscribe />
     </>
   );
 };
