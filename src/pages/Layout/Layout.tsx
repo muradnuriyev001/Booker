@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Loader from "../../components/Loader/Loader";
+import TopButton from "../../components/TopButton/TopButton";
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -19,10 +20,13 @@ const Layout = () => {
 
   return (
     <>
-      {loaderState && <Loader />}
-      <Header />
-      <Outlet />
-      <Footer />
+      <div>
+        {loaderState && <Loader />}
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+      <TopButton />
     </>
   );
 };
