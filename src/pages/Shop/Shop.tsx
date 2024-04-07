@@ -1,8 +1,8 @@
+import usePageTitle from "../../hooks/usePageTitle";
 
 const Shop = () => {
-  return (
-    <div>Shop</div>
-  )
-}
+  usePageTitle("Booker | Shop");
+  return <div>Shop</div>;
+};
 
-export default Shop
+export default Shop;
