@@ -29,5 +29,23 @@ a {
   --white: #fafaf7;
   --gray: #efefea;
   --gray2: #242424cc;
+  --black: #242424;
   --orange: #eb5e37;
+}
+
+/* Scrollbar settings*/
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7f00;
 }

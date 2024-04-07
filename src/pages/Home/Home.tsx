@@ -1,9 +1,10 @@
+import HomeSearch from "./HomeSearch/HomeSearch";
 
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+    <>
+      <HomeSearch />
+    </>
   );
 };
 
