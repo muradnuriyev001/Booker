@@ -1,0 +1,42 @@
+.recent {
+  font-family: Jost, sans-serif;
+  margin: 40px 0px;
+  p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .recent__blog {
+    display: flex;
+    margin: 10px 0px;
+    .recent__image {
+      margin-right: 10px;
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+    .recent__text {
+      p:nth-child(1) {
+        color: var(--gray2);
+        font-size: 14px;
+      }
+      p:nth-child(2) {
+        width: 75%;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .recent {
+    .recent__blog {
+      .recent__text {
+        p:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

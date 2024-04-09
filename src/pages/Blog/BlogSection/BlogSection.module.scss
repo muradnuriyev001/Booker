@@ -1,0 +1,37 @@
+.section {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  place-items: center;
+  padding: 50px 150px;
+  align-items: start;
+
+  .sidebar {
+    margin: 55px 0px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .section {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .section {
+    padding: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .section {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .section {
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+    place-items: unset;
+  }
+}

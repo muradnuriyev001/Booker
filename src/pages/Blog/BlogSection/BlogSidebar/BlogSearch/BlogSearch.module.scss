@@ -1,0 +1,30 @@
+.search_bar {
+  position: relative;
+  width: 320px;
+  input {
+    border: 2px solid var(--black);
+    border-width: 0px 0px 2px 0px;
+    padding: 0px 10px 10px 0px;
+    width: 320px;
+    position: relative;
+    &:focus{
+      outline: none;
+      border-color: var(--orange);
+    }
+  }
+  svg {
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    stroke-width: 1px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .search_bar {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+}

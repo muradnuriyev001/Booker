@@ -1,0 +1,22 @@
+.social_media {
+  p {
+    font-family: Jost, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  svg {
+    font-size: 35px;
+    padding: 5px;
+    border: 1px solid var(--black);
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      background-color: var(--orange);
+      color: var(--white);
+    }
+  }
+  .logos {
+    margin-top: 20px;
+  }
+}
