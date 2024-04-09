@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  form {
+    display: flex;
+  }
+  .df {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  label {
+    margin: 10px 0px;
+  }
+  textarea {
+    margin-top: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 5px;
+    width: 100%;
+  }
+  input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+  }
+  button {
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.3s all;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    form {
+      flex-direction: column;
+    }
+  }
+}
