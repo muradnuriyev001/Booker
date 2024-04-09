@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "date": "June 22, 2024",
     "title": "Unveiling Literary Gems: Exploring the World of Books.",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",
@@ -7,6 +8,7 @@
     "image": "blog1.jpg"
   },
   {
+    "id": 2,
     "date": "May 27, 2024",
     "title": "Dive into the Enchanting Universe of Stories",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",
@@ -14,6 +16,7 @@
     "image": "blog2.jpg"
   },
   {
+    "id": 3,
     "date": "May 5, 2024",
     "title": "Between the Lines: Discovering Hidden Treasures in Booker",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",
@@ -21,6 +24,7 @@
     "image": "blog3.jpg"
   },
   {
+    "id": 4,
     "date": "March 24, 2024",
     "title": "A Journey through the Land of Imagination",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",
@@ -28,6 +32,7 @@
     "image": "blog4.jpg"
   },
   {
+    "id": 5,
     "date": "March 15, 2024",
     "title": "Unveiling Literary Gems: Exploring the World of Books.",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",
@@ -35,6 +40,7 @@
     "image": "blog5.jpg"
   },
   {
+    "id": 6,
     "date": "April 18, 2024",
     "title": "Post format video blogs",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",
@@ -42,6 +48,7 @@
     "image": "blog6.jpg"
   },
   {
+    "id": 7,
     "date": "February 12, 2024",
     "title": "Between the Lines: Discovering Hidden Treasures in Booker",
     "description": "Our goal has always been to motivate, encourage and release our fellow creatives to do their thing Sed a...",

@@ -1,8 +1,10 @@
 import { FC } from "react";
 import c from "./BlogContentPost.module.scss";
 import { getImageURL } from "../../../../../../utils/getImageUrl";
+import { Link } from "react-router-dom";
 
 interface Post {
+  id: number;
   date: string;
   title: string;
   description: string;
@@ -10,7 +12,7 @@ interface Post {
   image: string;
 }
 
-const BlogContentPost: FC<Post> = ({ date, title, description, image }) => {
+const BlogContentPost: FC<Post> = ({ id, date, title, description, image }) => {
   return (
     <div className={c.post}>
       <div className={c.post__image}>
@@ -22,7 +24,9 @@ const BlogContentPost: FC<Post> = ({ date, title, description, image }) => {
         <h2>{title}</h2>
         <p>{description}</p>
 
-        <button>Read More</button>
+        <Link to={`/blog/${id}`}>
+          <button>Read More</button>
+        </Link>
       </div>
     </div>
   );

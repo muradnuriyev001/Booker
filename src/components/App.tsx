@@ -9,6 +9,7 @@ import Contact from "../pages/Contact/Contact";
 import Cart from "../pages/Cart/Cart";
 import Wishlist from "../pages/Wishlist/Wishlist";
 import Account from "../pages/Account/Account";
+import BlogPostPage from "../pages/Blog/BlogSection/BlogContent/BlogContentPosts/BlogContentPost/BlogPostPage/BlogPostPage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="blog/:blogId" element={<BlogPostPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
