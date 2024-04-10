@@ -1,12 +1,9 @@
 import c from "./ShopBookCard.module.scss";
 import { FC } from "react";
 import { getBooksImageURL } from "../../../../utils/getImageUrl";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-import {
-  addWishlist,
-  selectWishlist,
-} from "../../../../redux/slices/wishlistSlice.slice";
+import { addWishlist } from "../../../../redux/slices/wishlistSlice.slice";
 
 import { MdOutlineFavorite } from "react-icons/md";
 import { MdOutlineAddShoppingCart } from "react-icons/md";

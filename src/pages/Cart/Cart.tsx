@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import c from "./Cart.module.scss";
 import CartCard from "./CartCard/CartCard";
 import { selectCart } from "../../redux/slices/cartSlice.slice";
+import Checkout from "./Checkout/Checkout";
 
 const Cart = () => {
   usePageTitle("Booker | Wishlist");
@@ -28,7 +29,13 @@ const Cart = () => {
         )}
       </div>
 
-      <div className={c.checkout}></div>
+      {cartArray.length ? (
+        <div className={c.checkout}>
+          <Checkout />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

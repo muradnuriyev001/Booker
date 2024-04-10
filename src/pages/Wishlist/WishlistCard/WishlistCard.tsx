@@ -1,10 +1,17 @@
+import c from "./WishlistCard.module.scss";
 import { FC } from "react";
 import { getBooksImageURL } from "../../../utils/getImageUrl";
-import c from "./WishlistCard.module.scss";
-import { MdOutlineDeleteForever } from "react-icons/md";
 import { Wishlist } from "../../../types/types";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { deleteWishlist } from "../../../redux/slices/wishlistSlice.slice";
+import cartSliceSlice, {
+  addCart,
+  selectCart,
+} from "../../../redux/slices/cartSlice.slice";
+import { v4 as uuidv4 } from "uuid";
+
+import { MdOutlineDeleteForever } from "react-icons/md";
+import { BsCartPlus } from "react-icons/bs";
 
 const WishlistCard: FC<Wishlist> = ({ name, author, price, image, id }) => {
   const dispatch = useDispatch();
@@ -19,7 +26,12 @@ const WishlistCard: FC<Wishlist> = ({ name, author, price, image, id }) => {
     }; // Creating a dummy Wishlist object with just id
     dispatch(deleteWishlist(wishlistToDelete));
   };
-  
+
+  const handleAddToCart = () => {
+    const cartData = { name, price, author, id: uuidv4(), image };
+    dispatch(addCart(cartData));
+  };
+
   return (
     <div className={c.wishlist_card}>
       <img src={getBooksImageURL(image)} alt="" />
@@ -31,6 +43,7 @@ const WishlistCard: FC<Wishlist> = ({ name, author, price, image, id }) => {
       </div>
       <div className={c.wishlist_card__delete}>
         <MdOutlineDeleteForever onClick={() => handleDeleteWishlist(id)} />
+        <BsCartPlus onClick={handleAddToCart} />
       </div>
     </div>
   );
