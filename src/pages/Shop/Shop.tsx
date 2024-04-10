@@ -8,7 +8,7 @@ const Shop = () => {
     <>
       <div className={c.banner}>
         <h1>Shop</h1>
-      </div>{" "}
+      </div>
       <div className={c.shop}>
         <ShopFilters />
         <ShopBooks />

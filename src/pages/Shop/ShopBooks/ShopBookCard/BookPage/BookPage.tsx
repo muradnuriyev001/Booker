@@ -7,6 +7,8 @@ import { useDispatch } from "react-redux";
 import { addCart } from "../../../../../redux/slices/cartSlice.slice";
 
 import { IoStarSharp } from "react-icons/io5";
+import HomeComments from "../../../../Home/HomeComments/HomeComments";
+import HomeGuide from "../../../../Home/HomeGuide/HomeGuide";
 
 const BookPage = () => {
   const { bookId } = useParams();
@@ -29,39 +31,43 @@ const BookPage = () => {
   };
 
   return (
-    <div className={c.book_page}>
-      <div className={c.book_img}>
-        <p>Home / Shop / Book / {book.name}</p>
-        <img src={getBooksImageURL(book.image)} alt="" />
-      </div>
+    <>
+      <div className={c.book_page}>
+        <div className={c.book_img}>
+          <p>Home / Shop / Book / {book.name}</p>
+          <img src={getBooksImageURL(book.image)} alt="" />
+        </div>
 
-      <div className={c.book_info}>
-        <h1>{book.name}</h1>
-        <div className={c.stars}>
-          <IoStarSharp />
-          <IoStarSharp />
-          <IoStarSharp />
-          <IoStarSharp />
-          <IoStarSharp />
-          <p>(14 reviews)</p>
-        </div>
-        <p>Price: {book.price}$</p>
-        <p>{book.description}</p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          possimus excepturi nesciunt. Dolore aliquid assumenda amet reiciendis
-          beatae unde inventore corporis rerum quas perferendis. Molestias
-          numquam reiciendis totam ea sunt? Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Itaque doloremque impedit aut obcaecati
-          corporis officia? Voluptatum, eaque libero optio pariatur totam at
-          officiis quo neque. Quasi magnam vel delectus vitae?
-        </p>
-        <div className={c.book_buttons}>
-          <button onClick={handleAddToCart}>Add to Cart</button>
-          <button>Wishlist</button>
+        <div className={c.book_info}>
+          <h1>{book.name}</h1>
+          <div className={c.stars}>
+            <IoStarSharp />
+            <IoStarSharp />
+            <IoStarSharp />
+            <IoStarSharp />
+            <IoStarSharp />
+            <p>(14 reviews)</p>
+          </div>
+          <p>Price: {book.price}$</p>
+          <p>{book.description}</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            possimus excepturi nesciunt. Dolore aliquid assumenda amet
+            reiciendis beatae unde inventore corporis rerum quas perferendis.
+            Molestias numquam reiciendis totam ea sunt? Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Itaque doloremque impedit aut
+            obcaecati corporis officia? Voluptatum, eaque libero optio pariatur
+            totam at officiis quo neque. Quasi magnam vel delectus vitae?
+          </p>
+          <div className={c.book_buttons}>
+            <button onClick={handleAddToCart}>Add to Cart</button>
+            <button>Wishlist</button>
+          </div>
         </div>
       </div>
-    </div>
+      <HomeComments />
+      <HomeGuide />
+    </>
   );
 };
 
