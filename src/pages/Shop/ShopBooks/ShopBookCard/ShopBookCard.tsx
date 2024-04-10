@@ -36,7 +36,11 @@ const ShopBookCard: FC<BookData> = ({ price, name, author, image, id }) => {
     <div className={c.book_wrapper}>
       <Link to={`/shop/${id}`}>
         <div className={c.book_card}>
-          <img src={getBooksImageURL(image)} alt="" />
+          <img
+            src={getBooksImageURL(image)}
+            alt="Book Image"
+            draggable="false"
+          />
           <p>{author}</p>
           <h3>{name}</h3>
           <p>{price}$</p>
