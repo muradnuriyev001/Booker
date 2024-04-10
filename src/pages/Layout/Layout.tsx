@@ -15,7 +15,7 @@ const Layout = () => {
     setLoaderState(true);
     setTimeout(() => {
       setLoaderState(false);
-    }, 1500);
+    }, 0);
     window.scroll(0, 0);
   }, [pathname]);
 

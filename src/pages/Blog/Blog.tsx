@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div className={c.blog}>
       <div className={c.banner}>
-        <h1>Blogs</h1>
+        <h1>Blog</h1>
       </div>
 
       <BlogSection />

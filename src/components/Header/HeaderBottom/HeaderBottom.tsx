@@ -7,6 +7,9 @@ import logo from "../../../assets/booker-icon.png";
 import { FaRegHeart } from "react-icons/fa";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
+import { useSelector } from "react-redux";
+import { selectWishlist } from "../../../redux/slices/wishlistSlice.slice";
+import { selectCart } from "../../../redux/slices/cartSlice.slice";
 
 const HeaderBottom = () => {
   const [isActive, setIsActive] = useState(false);
@@ -30,8 +33,11 @@ const HeaderBottom = () => {
     };
   }, [location]);
 
-  const wishlistData = 8;
-  const cartData = 3;
+  const wishlist = useSelector(selectWishlist);
+  const wishlistItems = wishlist.wishlist.length;
+
+  const cart = useSelector(selectCart);
+  const cartItems = cart.cart.length;
 
   return (
     <div className={c.header__bottom}>
@@ -62,13 +68,13 @@ const HeaderBottom = () => {
 
       <div className={c.header__bottom__group}>
         <div className={c.header__bottom__wishlist}>
-          <NavLink data-count={wishlistData} to={"/wishlist"}>
+          <NavLink data-count={wishlistItems} to={"/wishlist"}>
             <FaRegHeart />
             <p>Wishlist</p>
           </NavLink>
         </div>
         <div className={c.header__bottom__cart}>
-          <NavLink data-count={cartData} to={"/cart"}>
+          <NavLink data-count={cartItems} to={"/cart"}>
             <RiShoppingBasketLine />
             <p>Cart</p>
           </NavLink>
