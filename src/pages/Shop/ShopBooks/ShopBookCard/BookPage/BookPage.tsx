@@ -1,0 +1,68 @@
+import { useParams } from "react-router-dom";
+import c from "./BookPage.module.scss";
+import booksData from "../../../../../data/books-data.json";
+import { getBooksImageURL } from "../../../../../utils/getImageUrl";
+import { v4 as uuidv4 } from "uuid";
+import { useDispatch } from "react-redux";
+import { addCart } from "../../../../../redux/slices/cartSlice.slice";
+
+import { IoStarSharp } from "react-icons/io5";
+
+const BookPage = () => {
+  const { bookId } = useParams();
+  const parsedBookId = parseInt(bookId || "");
+  const bookIndex = booksData.findIndex((book) => book.id === parsedBookId);
+  const book = booksData[bookIndex];
+
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    dispatch(
+      addCart({
+        name: book.name,
+        author: book.author,
+        price: book.price,
+        image: book.image,
+        id: uuidv4(),
+      })
+    );
+  };
+
+  return (
+    <div className={c.book_page}>
+      <div className={c.book_img}>
+        <p>Home / Shop / Book / {book.name}</p>
+        <img src={getBooksImageURL(book.image)} alt="" />
+      </div>
+
+      <div className={c.book_info}>
+        <h1>{book.name}</h1>
+        <div className={c.stars}>
+          <IoStarSharp />
+          <IoStarSharp />
+          <IoStarSharp />
+          <IoStarSharp />
+          <IoStarSharp />
+          <p>(14 reviews)</p>
+        </div>
+        <p>Price: {book.price}$</p>
+        <p>{book.description}</p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+          possimus excepturi nesciunt. Dolore aliquid assumenda amet reiciendis
+          beatae unde inventore corporis rerum quas perferendis. Molestias
+          numquam reiciendis totam ea sunt? Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Itaque doloremque impedit aut obcaecati
+          corporis officia? Voluptatum, eaque libero optio pariatur totam at
+          officiis quo neque. Quasi magnam vel delectus vitae?
+        </p>
+        <div className={c.book_buttons}>
+          <button onClick={handleAddToCart}>Add to Cart</button>
+          <button>Wishlist</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BookPage;

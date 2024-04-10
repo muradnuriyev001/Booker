@@ -17,8 +17,8 @@ const Checkout = () => {
       <p>Subtotal: {initialPrice.toFixed(2)}$</p>
       <p>Shipping: Free Shipping</p>
       <p>Tax: 1.99$</p>
-      <p>Special Discount: 5.99$</p>
-      <p>Total: {(initialPrice - 4).toFixed(2)}$</p>
+      <p>Special Discount: 3.99$</p>
+      <p>Total: {(initialPrice - 2).toFixed(2)}$</p>
       <img src={paymentIcons} alt="" />
       <button>PLACE ORDER</button>
     </div>

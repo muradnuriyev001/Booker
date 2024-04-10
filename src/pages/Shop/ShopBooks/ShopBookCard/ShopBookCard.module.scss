@@ -12,6 +12,16 @@
     width: 300px;
     height: 400px;
   }
+}
+
+.book_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .icons {
+    margin-left: 18px;
+    margin-bottom: 20px;
+  }
   svg {
     font-size: 30px;
     transition: 0.3s all;
@@ -45,6 +55,12 @@
 @media only screen and (max-width: 1023px) {
   .book_card {
     margin: 0px 20px 20px 0px;
+  }
+
+  .book_wrapper {
+    .icons {
+      margin-left: 0px;
+    }
   }
 }
 

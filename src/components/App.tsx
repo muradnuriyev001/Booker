@@ -10,6 +10,7 @@ import Cart from "../pages/Cart/Cart";
 import Wishlist from "../pages/Wishlist/Wishlist";
 import Account from "../pages/Account/Account";
 import BlogPostPage from "../pages/Blog/BlogSection/BlogContent/BlogContentPosts/BlogContentPost/BlogPostPage/BlogPostPage";
+import BookPage from "../pages/Shop/ShopBooks/ShopBookCard/BookPage/BookPage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="shop/:bookId" element={<BookPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="blog/:blogId" element={<BlogPostPage />} />
         <Route path="/contact" element={<Contact />} />
