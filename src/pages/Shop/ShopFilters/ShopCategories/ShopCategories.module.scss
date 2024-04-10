@@ -1,0 +1,18 @@
+.category {
+  display: flex;
+  margin-top: 10px;
+  input {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  input {
+    accent-color: var(--orange);
+  }
+}
+
+.categories {
+  font-family: Jost, sans-serif;
+  h2 {
+    font-size: 18px;
+  }
+}

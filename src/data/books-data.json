@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "name": "The Catcher in the Rye",
+    "description": "A novel by J.D. Salinger about the disillusionment of a teenager.",
+    "price": 9.99,
+    "author": "J.D. Salinger",
+    "image": "book8.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Moby-Dick",
+    "description": "A novel by Herman Melville about the journey of the whaling ship Pequod.",
+    "price": 12.99,
+    "author": "Herman Melville",
+    "image": "book3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "The Hobbit",
+    "description": "A fantasy novel by J.R.R. Tolkien about the adventures of Bilbo Baggins.",
+    "price": 10.99,
+    "author": "J.R.R. Tolkien",
+    "image": "book18.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Frankenstein",
+    "description": "A novel by Mary Shelley depicting the story of Victor Frankenstein and his creature.",
+    "price": 11.99,
+    "author": "Mary Shelley",
+    "image": "book2.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Lord of the Rings",
+    "description": "A trilogy by J.R.R. Tolkien following the quest to destroy the One Ring.",
+    "price": 69.99,
+    "author": "J.R.R. Tolkien",
+    "image": "book9.jpg"
+  },
+  {
+    "id": 6,
+    "name": "To Kill a Mockingbird",
+    "description": "A novel by Harper Lee set in the 1930s Southern United States.",
+    "price": 12.99,
+    "author": "Harper Lee",
+    "image": "book19.jpg"
+  },
+  {
+    "id": 7,
+    "name": "1984",
+    "description": "A dystopian novel by George Orwell depicting a totalitarian regime.",
+    "price": 9.99,
+    "author": "George Orwell",
+    "image": "book11.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Brave New World",
+    "description": "A novel by Aldous Huxley depicting a futuristic society.",
+    "price": 11.99,
+    "author": "Aldous Huxley",
+    "image": "book20.jpg"
+  },
+  {
+    "id": 9,
+    "name": "The Great Gatsby",
+    "description": "A novel by F. Scott Fitzgerald about the American Dream and the Roaring Twenties.",
+    "price": 10.99,
+    "author": "F. Scott Fitzgerald",
+    "image": "book7.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Crime and Punishment",
+    "description": "A novel by Fyodor Dostoevsky exploring the mental anguish and moral dilemmas of the protagonist.",
+    "price": 14.99,
+    "author": "Fyodor Dostoevsky",
+    "image": "book12.jpg"
+  },
+  {
+    "id": 11,
+    "name": "One Hundred Years of Solitude",
+    "description": "A novel by Gabriel García Márquez depicting the Buendía family's seven generations in the town of Macondo.",
+    "price": 139.99,
+    "author": "Gabriel García Márquez",
+    "image": "book5.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Wuthering Heights",
+    "description": "A novel by Emily Brontë depicting the passionate, if doomed, love between Heathcliff and Catherine Earnshaw.",
+    "price": 109.99,
+    "author": "Emily Brontë",
+    "image": "book17.jpg"
+  },
+  {
+    "id": 13,
+    "name": "The Odyssey",
+    "description": "An epic poem by Homer depicting the journey of Odysseus after the fall of Troy.",
+    "price": 11.99,
+    "author": "Homer",
+    "image": "book21.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Jane Eyre",
+    "description": "A novel by Charlotte Brontë following the experiences of its eponymous heroine.",
+    "price": 59.99,
+    "author": "Charlotte Brontë",
+    "image": "book13.jpg"
+  },
+  {
+    "id": 15,
+    "name": "The Picture of Dorian Gray",
+    "description": "A novel by Oscar Wilde about a young man who sells his soul for eternal youth and beauty.",
+    "price": 10.99,
+    "author": "Oscar Wilde",
+    "image": "book4.jpg"
+  },
+  {
+    "id": 16,
+    "name": "War and Peace",
+    "description": "A novel by Leo Tolstoy depicting the French invasion of Russia and its impact on society.",
+    "price": 19.99,
+    "author": "Leo Tolstoy",
+    "image": "book10.jpg"
+  },
+  {
+    "id": 17,
+    "name": "The Adventures of Huckleberry Finn",
+    "description": "A novel by Mark Twain about the journey of a boy and a runaway slave down the Mississippi River.",
+    "price": 11.99,
+    "author": "Mark Twain",
+    "image": "book6.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Pride and Prejudice",
+    "description": "A novel by Jane Austen about the manners and marriage in the British Regency period.",
+    "price": 42.99,
+    "author": "Jane Austen",
+    "image": "book15.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Great Expectations",
+    "description": "A novel by Charles Dickens following the life and education of an orphan named Pip.",
+    "price": 13.99,
+    "author": "Charles Dickens",
+    "image": "book14.jpg"
+  },
+  {
+    "id": 20,
+    "name": "The Brothers Karamazov",
+    "description": "A novel by Fyodor Dostoevsky about the murder of their father and the conflicts between three brothers.",
+    "price": 14.99,
+    "author": "Fyodor Dostoevsky",
+    "image": "book16.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Anna Karenina",
+    "description": "A novel by Leo Tolstoy depicting the tragedy of a married aristocrat and her affair with the affluent Count Vronsky.",
+    "price": 15.99,
+    "author": "Leo Tolstoy",
+    "image": "book1.jpg"
+  },
+  {
+    "id": 22,
+    "name": "The Count of Monte Cristo",
+    "description": "A novel by Alexandre Dumas following the journey of Edmond Dantès seeking revenge.",
+    "price": 14.99,
+    "author": "Alexandre Dumas",
+    "image": "book7.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Les Misérables",
+    "description": "A novel by Victor Hugo depicting the lives of several characters, particularly ex-convict Jean Valjean.",
+    "price": 13.99,
+    "author": "Victor Hugo",
+    "image": "book19.jpg"
+  },
+  {
+    "id": 24,
+    "name": "The Grapes of Wrath",
+    "description": "A novel by John Steinbeck following the Joad family's migration during the Great Depression.",
+    "price": 119.99,
+    "author": "John Steinbeck",
+    "image": "book5.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Don Quixote",
+    "description": "A novel by Miguel de Cervantes following the adventures of Alonso Quixano, who reads so many chivalric romances that he loses his sanity.",
+    "price": 16.99,
+    "author": "Miguel de Cervantes",
+    "image": "book20.jpg"
+  },
+  {
+    "id": 26,
+    "name": "The Scarlet Letter",
+    "description": "A novel by Nathaniel Hawthorne set in 17th-century Puritan Massachusetts Bay Colony.",
+    "price": 10.99,
+    "author": "Nathaniel Hawthorne",
+    "image": "book3.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Alice's Adventures in Wonderland",
+    "description": "A novel by Lewis Carroll following a girl named Alice who falls through a rabbit hole into a fantasy world populated by peculiar creatures.",
+    "price": 19.99,
+    "author": "Lewis Carroll",
+    "image": "book9.jpg"
+  },
+  {
+    "id": 28,
+    "name": "The Iliad",
+    "description": "An ancient Greek epic poem by Homer about the Trojan War.",
+    "price": 12.99,
+    "author": "Homer",
+    "image": "book13.jpg"
+  },
+  {
+    "id": 29,
+    "name": "The Divine Comedy",
+    "description": "An epic poem by Dante Alighieri depicting the journey through Hell, Purgatory, and Paradise.",
+    "price": 15.99,
+    "author": "Dante Alighieri",
+    "image": "book15.jpg"
+  },
+  {
+    "id": 30,
+    "name": "The Sun Also Rises",
+    "description": "A novel by Ernest Hemingway following a group of American and British expatriates who travel from Paris to the Festival of San Fermín in Pamplona to watch the running of the bulls and the bullfights.",
+    "price": 10.99,
+    "author": "Ernest Hemingway",
+    "image": "book10.jpg"
+  },
+  {
+    "id": 31,
+    "name": "The Old Man and the Sea",
+    "description": "A novella by Ernest Hemingway about an aging Cuban fisherman named Santiago who struggles with a giant marlin far out in the Gulf Stream.",
+    "price": 5.99,
+    "author": "Ernest Hemingway",
+    "image": "book2.jpg"
+  },
+  {
+    "id": 32,
+    "name": "The Bell Jar",
+    "description": "A novel by Sylvia Plath about a young woman who descends into mental illness.",
+    "price": 11.99,
+    "author": "Sylvia Plath",
+    "image": "book14.jpg"
+  },
+  {
+    "id": 33,
+    "name": "The Canterbury Tales",
+    "description": "A collection of stories by Geoffrey Chaucer about a group of pilgrims traveling to the shrine of Thomas Becket in Canterbury Cathedral.",
+    "price": 13.99,
+    "author": "Geoffrey Chaucer",
+    "image": "book6.jpg"
+  },
+  {
+    "id": 34,
+    "name": "The Stranger",
+    "description": "A novel by Albert Camus following Meursault, an emotionally detached French Algerian who refuses to conform to societal expectations.",
+    "price": 4.99,
+    "author": "Albert Camus",
+    "image": "book8.jpg"
+  },
+  {
+    "id": 35,
+    "name": "The Road",
+    "description": "A novel by Cormac McCarthy following a father and his young son over a period of several months across a landscape blasted by an unspecified cataclysm that has destroyed most of civilization and, in the intervening years, almost all life on Earth.",
+    "price": 12.99,
+    "author": "Cormac McCarthy",
+    "image": "book4.jpg"
+  },
+  {
+    "id": 36,
+    "name": "The Color Purple",
+    "description": "A novel by Alice Walker about the lives of African American women in the southern United States in the 1930s.",
+    "price": 11.99,
+    "author": "Alice Walker",
+    "image": "book1.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Heart of Darkness",
+    "description": "A novella by Joseph Conrad about a voyage up the Congo River into the Congo Free State in the Heart of Africa.",
+    "price": 10.99,
+    "author": "Joseph Conrad",
+    "image": "book17.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Slaughterhouse-Five",
+    "description": "A novel by Kurt Vonnegut about the experiences of Billy Pilgrim, a soldier who becomes unstuck in time.",
+    "price": 9.99,
+    "author": "Kurt Vonnegut",
+    "image": "book18.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Middlemarch",
+    "description": "A novel by George Eliot following the lives of the residents of the fictional Midlands town of Middlemarch.",
+    "price": 13.99,
+    "author": "George Eliot",
+    "image": "book12.jpg"
+  },
+  {
+    "id": 40,
+    "name": "The Handmaid's Tale",
+    "description": "A dystopian novel by Margaret Atwood set in the near future, in a totalitarian theocracy that has overthrown the United States government.",
+    "price": 14.99,
+    "author": "Margaret Atwood",
+    "image": "book11.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Moby-Dick",
+    "description": "A novel by Herman Melville about the obsessive quest of Ahab, captain of the whaling ship Pequod, for revenge on the giant white sperm whale Moby Dick.",
+    "price": 16.99,
+    "author": "Herman Melville",
+    "image": "book20.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Emma",
+    "description": "A novel by Jane Austen about the perils of misconstrued romance.",
+    "price": 49.99,
+    "author": "Jane Austen",
+    "image": "book15.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Madame Bovary",
+    "description": "A novel by Gustave Flaubert about the life of Emma Bovary and her affairs with Rodolphe Boulanger and Léon Dupuis.",
+    "price": 11.99,
+    "author": "Gustave Flaubert",
+    "image": "book6.jpg"
+  },
+  {
+    "id": 44,
+    "name": "War and Peace",
+    "description": "A novel by Leo Tolstoy set against the backdrop of the Napoleonic Wars.",
+    "price": 17.99,
+    "author": "Leo Tolstoy",
+    "image": "book1.jpg"
+  },
+  {
+    "id": 45,
+    "name": "The Picture of Dorian Gray",
+    "description": "A novel by Oscar Wilde about Dorian Gray, a young man who sells his soul for eternal youth and beauty.",
+    "price": 10.99,
+    "author": "Oscar Wilde",
+    "image": "book2.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Wuthering Heights",
+    "description": "A novel by Emily Brontë about the passionate and destructive love between Heathcliff and Catherine Earnshaw.",
+    "price": 13.99,
+    "author": "Emily Brontë",
+    "image": "book17.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Gone with the Wind",
+    "description": "A novel by Margaret Mitchell set in the American South during the Civil War and Reconstruction era.",
+    "price": 15.99,
+    "author": "Margaret Mitchell",
+    "image": "book3.jpg"
+  },
+  {
+    "id": 48,
+    "name": "One Hundred Years of Solitude",
+    "description": "A novel by Gabriel García Márquez following the Buendía family through seven generations in the town of Macondo.",
+    "price": 14.99,
+    "author": "Gabriel García Márquez",
+    "image": "book13.jpg"
+  },
+  {
+    "id": 49,
+    "name": "The Catcher in the Rye",
+    "description": "A novel by J.D. Salinger following Holden Caulfield, a young man in New York City, who feels alienated from the world.",
+    "price": 11.99,
+    "author": "J.D. Salinger",
+    "image": "book12.jpg"
+  },
+  {
+    "id": 50,
+    "name": "The Trial",
+    "description": "A novel by Franz Kafka following Josef K., a man arrested and prosecuted by a remote, inaccessible authority, with the nature of his crime revealed neither to him nor to the reader.",
+    "price": 12.99,
+    "author": "Franz Kafka",
+    "image": "book7.jpg"
+  },
+  {
+    "id": 51,
+    "name": "To Kill a Mockingbird",
+    "description": "A novel by Harper Lee set in the American South during the 1930s, addressing issues of racism and injustice.",
+    "price": 10.99,
+    "author": "Harper Lee",
+    "image": "book8.jpg"
+  },
+  {
+    "id": 52,
+    "name": "The Hobbit",
+    "description": "A fantasy novel by J.R.R. Tolkien following the journey of Bilbo Baggins, who is swept into an epic quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug.",
+    "price": 13.99,
+    "author": "J.R.R. Tolkien",
+    "image": "book5.jpg"
+  },
+  {
+    "id": 53,
+    "name": "The Great Gatsby",
+    "description": "A novel by F. Scott Fitzgerald set in the Jazz Age on Long Island, following the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan.",
+    "price": 11.99,
+    "author": "F. Scott Fitzgerald",
+    "image": "book4.jpg"
+  },
+  {
+    "id": 54,
+    "name": "1984",
+    "description": "A dystopian novel by George Orwell set in a totalitarian regime, where the government controls every aspect of life.",
+    "price": 149.99,
+    "author": "George Orwell",
+    "image": "book18.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Frankenstein",
+    "description": "A novel by Mary Shelley about Victor Frankenstein, who creates a creature in an unorthodox scientific experiment.",
+    "price": 12.99,
+    "author": "Mary Shelley",
+    "image": "book16.jpg"
+  },
+  {
+    "id": 56,
+    "name": "The Odyssey",
+    "description": "An ancient Greek epic poem by Homer following the Greek hero Odysseus on his journey home from the Trojan War.",
+    "price": 15.99,
+    "author": "Homer",
+    "image": "book10.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Crime and Punishment",
+    "description": "A novel by Fyodor Dostoevsky following the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who formulates a plan to kill an unscrupulous pawnbroker for her money.",
+    "price": 13.99,
+    "author": "Fyodor Dostoevsky",
+    "image": "book14.jpg"
+  },
+  {
+    "id": 58,
+    "name": "The Adventures of Huckleberry Finn",
+    "description": "A novel by Mark Twain following the adventures of Huck Finn and his friend Tom Sawyer as they travel down the Mississippi River.",
+    "price": 11.99,
+    "author": "Mark Twain",
+    "image": "book21.jpg"
+  },
+  {
+    "id": 59,
+    "name": "The Fountainhead",
+    "description": "A novel by Ayn Rand about an individualistic young architect named Howard Roark and his struggles against conventional standards.",
+    "price": 49.99,
+    "author": "Ayn Rand",
+    "image": "book9.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Catch-22",
+    "description": "A novel by Joseph Heller set during World War II, following Captain John Yossarian, a U.S. Army Air Forces B-25 bombardier.",
+    "price": 12.99,
+    "author": "Joseph Heller",
+    "image": "book16.jpg"
+  },
+  {
+    "id": 61,
+    "name": "Pride and Prejudice",
+    "description": "A novel by Jane Austen about the romantic adventures of Elizabeth Bennet and her four sisters after two rich and eligible bachelors move into their neighborhood.",
+    "price": 10.99,
+    "author": "Jane Austen",
+    "image": "book19.jpg"
+  },
+  {
+    "id": 62,
+    "name": "The Brothers Karamazov",
+    "description": "A novel by Fyodor Dostoevsky following the murder of Fyodor Pavlovich Karamazov, an immoral father of four sons, each with a distinct personality.",
+    "price": 16.99,
+    "author": "Fyodor Dostoevsky",
+    "image": "book11.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Anna Karenina",
+    "description": "A novel by Leo Tolstoy following the tragic love affair between Anna Karenina and Count Alexei Vronsky.",
+    "price": 13.99,
+    "author": "Leo Tolstoy",
+    "image": "book12.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Ulysses",
+    "description": "A novel by James Joyce that chronicles the peripatetic appointments and encounters of Leopold Bloom in Dublin on June 16, 1904.",
+    "price": 15.99,
+    "author": "James Joyce",
+    "image": "book3.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Great Expectations",
+    "description": "A novel by Charles Dickens following the life of an orphan named Pip, who grows up as a gentleman in London.",
+    "price": 11.99,
+    "author": "Charles Dickens",
+    "image": "book20.jpg"
+  },
+  {
+    "id": 66,
+    "name": "The Lord of the Rings",
+    "description": "A fantasy novel by J.R.R. Tolkien following the quest to destroy the One Ring, and thus ensure the destruction of its maker, the Dark Lord Sauron.",
+    "price": 19.99,
+    "author": "J.R.R. Tolkien",
+    "image": "book15.jpg"
+  },
+  {
+    "id": 67,
+    "name": "Les Liaisons Dangereuses",
+    "description": "A novel by Pierre Choderlos de Laclos following the Marquise de Merteuil and the Vicomte de Valmont, who use seduction as a weapon to humiliate and degrade others.",
+    "price": 22.99,
+    "author": "Pierre Choderlos de Laclos",
+    "image": "book13.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Jane Eyre",
+    "description": "A novel by Charlotte Brontë following the experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester.",
+    "price": 13.99,
+    "author": "Charlotte Brontë",
+    "image": "book18.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Robinson Crusoe",
+    "description": "A novel by Daniel Defoe about a man shipwrecked and stranded on an uninhabited island for 28 years.",
+    "price": 10.99,
+    "author": "Daniel Defoe",
+    "image": "book17.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Tess of the d'Urbervilles",
+    "description": "A novel by Thomas Hardy following the tragic life of Tess Durbeyfield.",
+    "price": 11.99,
+    "author": "Thomas Hardy",
+    "image": "book4.jpg"
+  },
+  {
+    "id": 71,
+    "name": "The Sound and the Fury",
+    "description": "A novel by William Faulkner following the Compson family in Mississippi from 1910 to 1928.",
+    "price": 12.99,
+    "author": "William Faulkner",
+    "image": "book14.jpg"
+  },
+  {
+    "id": 72,
+    "name": "Beloved",
+    "description": "A novel by Toni Morrison about Sethe, an escaped slave who kills her own daughter to save her from a life of slavery.",
+    "price": 13.99,
+    "author": "Toni Morrison",
+    "image": "book16.jpg"
+  },
+  {
+    "id": 73,
+    "name": "David Copperfield",
+    "description": "A novel by Charles Dickens following the life of David Copperfield from childhood to maturity.",
+    "price": 34.99,
+    "author": "Charles Dickens",
+    "image": "book8.jpg"
+  },
+  {
+    "id": 74,
+    "name": "Little Women",
+    "description": "A novel by Louisa May Alcott following the lives of four sisters—Meg, Jo, Beth, and Amy March—detailing their passage from childhood to womanhood.",
+    "price": 12.99,
+    "author": "Louisa May Alcott",
+    "image": "book10.jpg"
+  },
+  {
+    "id": 75,
+    "name": "The Call of the Wild",
+    "description": "A novel by Jack London about a domesticated dog called Buck who is stolen from his home in California and sold into the brutal existence of an Alaskan sled dog.",
+    "price": 9.99,
+    "author": "Jack London",
+    "image": "book9.jpg"
+  },
+  {
+    "id": 76,
+    "name": "Gulliver's Travels",
+    "description": "A novel by Jonathan Swift about Lemuel Gulliver and his voyages to strange lands where he encounters giants, tiny people, and talking horses.",
+    "price": 11.99,
+    "author": "Jonathan Swift",
+    "image": "book6.jpg"
+  },
+  {
+    "id": 77,
+    "name": "The Wind in the Willows",
+    "description": "A novel by Kenneth Grahame about the adventures of four anthropomorphous animals in a pastoral version of England.",
+    "price": 10.99,
+    "author": "Kenneth Grahame",
+    "image": "book3.jpg"
+  },
+  {
+    "id": 78,
+    "name": "A Tale of Two Cities",
+    "description": "A novel by Charles Dickens set in London and Paris before and during the French Revolution.",
+    "price": 13.99,
+    "author": "Charles Dickens",
+    "image": "book21.jpg"
+  },
+  {
+    "id": 79,
+    "name": "Invisible Man",
+    "description": "A novel by Ralph Ellison following an African American man whose color renders him invisible, published in 1952.",
+    "price": 12.99,
+    "author": "Ralph Ellison",
+    "image": "book15.jpg"
+  },
+  {
+    "id": 80,
+    "name": "Life of Pi",
+    "description": "A novel by Yann Martel following a young Indian boy named Pi who survives a shipwreck and is stranded on a lifeboat in the Pacific Ocean with a Bengal tiger named Richard Parker.",
+    "price": 74.99,
+    "author": "Yann Martel",
+    "image": "book2.jpg"
+  },
+  {
+    "id": 81,
+    "name": "A Clockwork Orange",
+    "description": "A novel by Anthony Burgess about a dystopian future where youth gangs commit acts of ultraviolence.",
+    "price": 11.99,
+    "author": "Anthony Burgess",
+    "image": "book19.jpg"
+  },
+  {
+    "id": 82,
+    "name": "Dracula",
+    "description": "A novel by Bram Stoker about Count Dracula's attempt to move from Transylvania to England so he may find new blood and spread the undead curse.",
+    "price": 12.99,
+    "author": "Bram Stoker",
+    "image": "book7.jpg"
+  },
+  {
+    "id": 83,
+    "name": "The Adventures of Sherlock Holmes",
+    "description": "A collection of detective stories by Sir Arthur Conan Doyle featuring his famous detective, Sherlock Holmes, and Holmes's friend, Dr. John Watson.",
+    "price": 13.99,
+    "author": "Sir Arthur Conan Doyle",
+    "image": "book11.jpg"
+  },
+  {
+    "id": 84,
+    "name": "The Stand",
+    "description": "A post-apocalyptic horror/fantasy novel by Stephen King following the spread of a lethal virus that wipes out most of the world's population.",
+    "price": 15.99,
+    "author": "Stephen King",
+    "image": "book4.jpg"
+  },
+  {
+    "id": 85,
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "description": "A comic science fiction series by Douglas Adams following the adventures of Arthur Dent, a hapless Englishman, following the destruction of Earth by the Vogons, a race of unpleasant and bureaucratic aliens.",
+    "price": 11.99,
+    "author": "Douglas Adams",
+    "image": "book5.jpg"
+  },
+  {
+    "id": 86,
+    "name": "Atlas Shrugged",
+    "description": "A novel by Ayn Rand about a dystopian United States in which private businesses suffer under increasingly burdensome laws and regulations.",
+    "price": 14.99,
+    "author": "Ayn Rand",
+    "image": "book16.jpg"
+  },
+  {
+    "id": 87,
+    "name": "The Stand",
+    "description": "A post-apocalyptic horror/fantasy novel by Stephen King following the spread of a lethal virus that wipes out most of the world's population.",
+    "price": 15.99,
+    "author": "Stephen King",
+    "image": "book7.jpg"
+  },
+  {
+    "id": 88,
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "description": "A comic science fiction series by Douglas Adams following the adventures of Arthur Dent, a hapless Englishman, following the destruction of Earth by the Vogons, a race of unpleasant and bureaucratic aliens.",
+    "price": 11.99,
+    "author": "Douglas Adams",
+    "image": "book12.jpg"
+  },
+  {
+    "id": 89,
+    "name": "Atlas Shrugged",
+    "description": "A novel by Ayn Rand about a dystopian United States in which private businesses suffer under increasingly burdensome laws and regulations.",
+    "price": 14.99,
+    "author": "Ayn Rand",
+    "image": "book17.jpg"
+  },
+  {
+    "id": 90,
+    "name": "The Stand",
+    "description": "A post-apocalyptic horror/fantasy novel by Stephen King following the spread of a lethal virus that wipes out most of the world's population.",
+    "price": 15.99,
+    "author": "Stephen King",
+    "image": "book19.jpg"
+  },
+  {
+    "id": 91,
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "description": "A comic science fiction series by Douglas Adams following the adventures of Arthur Dent, a hapless Englishman, following the destruction of Earth by the Vogons, a race of unpleasant and bureaucratic aliens.",
+    "price": 11.99,
+    "author": "Douglas Adams",
+    "image": "book14.jpg"
+  },
+  {
+    "id": 92,
+    "name": "Atlas Shrugged",
+    "description": "A novel by Ayn Rand about a dystopian United States in which private businesses suffer under increasingly burdensome laws and regulations.",
+    "price": 14.99,
+    "author": "Ayn Rand",
+    "image": "book13.jpg"
+  },
+  {
+    "id": 93,
+    "name": "The Stand",
+    "description": "A post-apocalyptic horror/fantasy novel by Stephen King following the spread of a lethal virus that wipes out most of the world's population.",
+    "price": 15.99,
+    "author": "Stephen King",
+    "image": "book20.jpg"
+  },
+  {
+    "id": 94,
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "description": "A comic science fiction series by Douglas Adams following the adventures of Arthur Dent, a hapless Englishman, following the destruction of Earth by the Vogons, a race of unpleasant and bureaucratic aliens.",
+    "price": 11.99,
+    "author": "Douglas Adams",
+    "image": "book18.jpg"
+  },
+  {
+    "id": 95,
+    "name": "Atlas Shrugged",
+    "description": "A novel by Ayn Rand about a dystopian United States in which private businesses suffer under increasingly burdensome laws and regulations.",
+    "price": 14.99,
+    "author": "Ayn Rand",
+    "image": "book10.jpg"
+  },
+  {
+    "id": 96,
+    "name": "The Stand",
+    "description": "A post-apocalyptic horror/fantasy novel by Stephen King following the spread of a lethal virus that wipes out most of the world's population.",
+    "price": 15.99,
+    "author": "Stephen King",
+    "image": "book21.jpg"
+  },
+  {
+    "id": 97,
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "description": "A comic science fiction series by Douglas Adams following the adventures of Arthur Dent, a hapless Englishman, following the destruction of Earth by the Vogons, a race of unpleasant and bureaucratic aliens.",
+    "price": 11.99,
+    "author": "Douglas Adams",
+    "image": "book16.jpg"
+  },
+  {
+    "id": 98,
+    "name": "Atlas Shrugged",
+    "description": "A novel by Ayn Rand about a dystopian United States in which private businesses suffer under increasingly burdensome laws and regulations.",
+    "price": 14.99,
+    "author": "Ayn Rand",
+    "image": "book9.jpg"
+  },
+  {
+    "id": 99,
+    "name": "The Stand",
+    "description": "A post-apocalyptic horror/fantasy novel by Stephen King following the spread of a lethal virus that wipes out most of the world's population.",
+    "price": 15.99,
+    "author": "Stephen King",
+    "image": "book1.jpg"
+  },
+  {
+    "id": 100,
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "description": "A comic science fiction series by Douglas Adams following the adventures of Arthur Dent, a hapless Englishman, following the destruction of Earth by the Vogons, a race of unpleasant and bureaucratic aliens.",
+    "price": 11.99,
+    "author": "Douglas Adams",
+    "image": "book2.jpg"
+  }
+]
