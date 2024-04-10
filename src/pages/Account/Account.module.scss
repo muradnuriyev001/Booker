@@ -1,0 +1,83 @@
+.banner {
+  background-image: url("../../assets/Blog/blogbg.jpg");
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Jost, sans-serif;
+  h1 {
+    font-size: 35px;
+  }
+}
+
+.account {
+  font-family: Jost, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+  button {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 13px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+    border: none;
+    margin-top: 20px;
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+  input {
+    padding: 10px;
+    margin: 10px 0px;
+    width: 400px;
+  }
+  .log_in {
+    margin: 30px 0px;
+    h1 {
+      margin: 20px 0px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
+      input {
+        width: unset;
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+  .register {
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .account {
+    input {
+      width: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .account {
+    input {
+      width: 300px;
+    }
+  }
+}
