@@ -9,6 +9,7 @@ import { addCart } from "../../../../../redux/slices/cartSlice.slice";
 import { IoStarSharp } from "react-icons/io5";
 import HomeComments from "../../../../Home/HomeComments/HomeComments";
 import HomeGuide from "../../../../Home/HomeGuide/HomeGuide";
+import { addWishlist } from "../../../../../redux/slices/wishlistSlice.slice";
 
 const BookPage = () => {
   const { bookId } = useParams();
@@ -21,6 +22,18 @@ const BookPage = () => {
   const handleAddToCart = () => {
     dispatch(
       addCart({
+        name: book.name,
+        author: book.author,
+        price: book.price,
+        image: book.image,
+        id: uuidv4(),
+      })
+    );
+  };
+
+  const handleAddToWishlist = () => {
+    dispatch(
+      addWishlist({
         name: book.name,
         author: book.author,
         price: book.price,
@@ -61,7 +74,7 @@ const BookPage = () => {
           </p>
           <div className={c.book_buttons}>
             <button onClick={handleAddToCart}>Add to Cart</button>
-            <button>Wishlist</button>
+            <button onClick={handleAddToWishlist}>Wishlist</button>
           </div>
         </div>
       </div>
