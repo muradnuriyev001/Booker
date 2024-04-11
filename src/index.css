@@ -23,6 +23,10 @@ a {
   color: inherit;
 }
 
+.active {
+  color: var(--orange);
+}
+
 :root {
   --warm-white: #f2ede3;
   --warm-white2: #f1ede2;
