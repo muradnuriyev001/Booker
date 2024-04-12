@@ -5,6 +5,7 @@ import HomeComments from "./HomeComments/HomeComments";
 import HomeGuide from "./HomeGuide/HomeGuide";
 import HomeSearch from "./HomeSearch/HomeSearch";
 import HomeServices from "./HomeServices/HomeServices";
+import HomeSpecialDeals from "./HomeSpecialDeals/HomeSpecialDeals";
 
 const Home = () => {
   usePageTitle("Booker | Home");
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <HomeSearch />
       <HomeServices />
+      <HomeSpecialDeals/>
       <HomeBestSellers />
       <HomeGuide />
       <HomeComments />

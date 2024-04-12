@@ -60,3 +60,28 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff7f00;
 }
+
+/* Swiper settings*/
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 50%;
+  margin-top: -60px !important;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--black);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px;
+}
+
+.swiper-button-prev::after {
+  margin-right: 4px;
+}
