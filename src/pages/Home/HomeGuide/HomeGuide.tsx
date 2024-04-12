@@ -1,5 +1,5 @@
 import c from "./HomeGuide.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const HomeGuide = () => {
   return (
     <div className={c.guide}>
@@ -7,7 +7,7 @@ const HomeGuide = () => {
       <h2>Holiday Gift Guide</h2>
       <p>All Books are flat 50% Off</p>
       <button>
-        <NavLink to={"/shop"}>SHOP COLLECTION</NavLink>
+        <Link to={"/shop"}>SHOP COLLECTION</Link>
       </button>
     </div>
   );

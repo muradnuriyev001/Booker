@@ -53,6 +53,7 @@ const BookPage = () => {
 
         <div className={c.book_info}>
           <h1>{book.name}</h1>
+          <p>{book.description}</p>
           <div className={c.stars}>
             <IoStarSharp />
             <IoStarSharp />
@@ -62,7 +63,7 @@ const BookPage = () => {
             <p>(14 reviews)</p>
           </div>
           <p>Price: {book.price}$</p>
-          <p>{book.description}</p>
+
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
             possimus excepturi nesciunt. Dolore aliquid assumenda amet
@@ -78,8 +79,8 @@ const BookPage = () => {
           </div>
         </div>
       </div>
-      <HomeComments />
       <HomeGuide />
+      <HomeComments />
     </>
   );
 };
