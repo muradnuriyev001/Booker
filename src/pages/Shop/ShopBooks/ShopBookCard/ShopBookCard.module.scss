@@ -4,9 +4,16 @@
   p {
     color: var(--gray2);
     margin: 5px 0px;
+    font-size: 14px;
+  }
+  p:nth-child(4) {
+    font-size: 15px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--orange);
+    text-decoration: underline;
   }
   img {
     width: 300px;
@@ -57,7 +64,7 @@
   .book_card {
     margin: 20px 5px;
   }
-  .book_wrapper{
+  .book_wrapper {
     .icons {
       margin-left: 5px;
     }
