@@ -1,5 +1,6 @@
 import Subscribe from "../../components/Subscribe/Subscribe";
 import usePageTitle from "../../hooks/usePageTitle";
+import HomeBestSellers from "./HomeBestSellers/HomeBestSellers";
 import HomeComments from "./HomeComments/HomeComments";
 import HomeGuide from "./HomeGuide/HomeGuide";
 import HomeSearch from "./HomeSearch/HomeSearch";
@@ -11,6 +12,7 @@ const Home = () => {
     <>
       <HomeSearch />
       <HomeServices />
+      <HomeBestSellers />
       <HomeGuide />
       <HomeComments />
       <Subscribe />
