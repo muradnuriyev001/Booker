@@ -1,5 +1,5 @@
 import c from "./HeaderTop.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
@@ -11,16 +11,16 @@ const HeaderTop = () => {
     <div className={c.header__top}>
       <div className={c.header__top__help}>
         <FaRegQuestionCircle />
-        <NavLink to={"/contact"}>
+        <Link to={"/contact"}>
           <p>Need help?</p>
-        </NavLink>
+        </Link>
       </div>
 
       <div className={c.header__top__address}>
         <TbWorld />
-        <NavLink to={"/contact"}>
+        <Link to={"/contact"}>
           <p>Booker Address</p>
-        </NavLink>
+        </Link>
       </div>
 
       <div className={c.header__top_shipping}>
@@ -36,9 +36,9 @@ const HeaderTop = () => {
 
       <div className={c.header__top__account}>
         <IoMdPerson />
-        <NavLink to={"/account"}>
+        <Link to={"/account"}>
           <p>Account</p>
-        </NavLink>
+        </Link>
       </div>
     </div>
   );
