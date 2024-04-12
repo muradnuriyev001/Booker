@@ -5,10 +5,11 @@
   font-family: Jost, sans-serif;
   margin: 20px 0px;
   h1 {
-    font-weight: 600;
+    font-weight: 500;
     padding: 40px 0px;
     text-align: center;
     color: var(--orange);
+    text-decoration: underline;
   }
 }
 
@@ -17,7 +18,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 20px 0px;
   img {
-    border: 3px solid var(--orange);
+    border: 2px solid var(--orange);
     width: 215px !important;
     height: 300px !important;
   }
