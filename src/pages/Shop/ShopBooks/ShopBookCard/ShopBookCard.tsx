@@ -34,7 +34,7 @@ const ShopBookCard: FC<BookData> = ({ price, name, author, image, id }) => {
 
   return (
     <div className={c.book_wrapper}>
-      <Link to={`/shop/${id}`}>
+      <Link to={`/shop/book/${id}`}>
         <div className={c.book_card}>
           <img
             src={getBooksImageURL(image)}
