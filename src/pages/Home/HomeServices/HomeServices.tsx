@@ -4,9 +4,29 @@ import { RiRefund2Fill } from "react-icons/ri";
 import { IoMdBook } from "react-icons/io";
 import { CiDiscount1 } from "react-icons/ci";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 const HomeServices = () => {
   return (
-    <div className={c.services}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      variants={Animation}
+      custom={0.5}
+      className={c.services}
+    >
       <div className={c.services__1}>
         <FaTruckPlane />
         <p>Free Standard Delivery</p>
@@ -27,7 +47,7 @@ const HomeServices = () => {
         <p>Special Discounts</p>
         <span>Special discounts on selected items.</span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

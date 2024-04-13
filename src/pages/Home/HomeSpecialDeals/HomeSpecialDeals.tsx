@@ -7,9 +7,23 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import ShopBookCard from "../../Shop/ShopBooks/ShopBookCard/ShopBookCard";
 import { useEffect, useState } from "react";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 const HomeSpecialDeals = () => {
   //Slicing books
   const specialDeals = booksData.slice(32, 40);
@@ -50,7 +64,14 @@ const HomeSpecialDeals = () => {
   }, []);
 
   return (
-    <div className={c.special_deals}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      variants={Animation}
+      custom={0.8}
+      className={c.special_deals}
+    >
       <div className={c.deal_text}>
         <h1>Special Deals</h1>
         <p>Ends in: {timeRemaining} </p>
@@ -94,7 +115,7 @@ const HomeSpecialDeals = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

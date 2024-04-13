@@ -8,12 +8,14 @@
   flex-direction: column;
   font-family: Jost, sans-serif;
 
-  p {
+  p:nth-child(1) {
+    animation: reveal 4s;
     letter-spacing: 2px;
     text-align: center;
   }
 
   h2 {
+    animation: reveal 5s;
     font-family: "Times New Roman", Times, serif;
     font-size: 50px;
     font-weight: 300;
@@ -34,5 +36,16 @@
 @media only screen and (max-width: 400px) {
   .home__banner {
     padding-top: 50px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
   }
 }
