@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, ChangeEvent } from "react";
 import c from "./ShopFind.module.scss";
 import { CiSearch } from "react-icons/ci";
 import { useDispatch } from "react-redux";
@@ -16,7 +16,8 @@ const ShopFind = () => {
     []
   );
 
-  const handleInputValue = (e: any) => {
+  // : ChangeEvent<HTMLInputElement> to avoid :any
+  const handleInputValue = (e: ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
     setValue(inputValue);
     updateSearchValue(inputValue);
