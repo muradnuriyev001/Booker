@@ -1,5 +1,5 @@
 import c from "./SearchBar.module.scss";
-
+import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 
 const tempCategories = [
@@ -41,10 +41,10 @@ const SearchBar = () => {
             </option>
           ))}
         </select>
-        <button type="submit">
+        <Link to={"/shop"}>
           <CiSearch />
           <p>FIND BOOK</p>
-        </button>
+        </Link>
       </form>
     </div>
   );
