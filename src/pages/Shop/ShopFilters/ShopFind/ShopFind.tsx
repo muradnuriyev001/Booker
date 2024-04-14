@@ -1,17 +1,27 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import c from "./ShopFind.module.scss";
 import { CiSearch } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import { setTitleFilter } from "../../../../redux/slices/filterBookSlice.slice";
-
+import debounce from "lodash.debounce";
+import { useLocation } from "react-router-dom";
 const ShopFind = () => {
+  const location = useLocation();
   const [value, setValue] = useState<string>("");
 
   const dispatch = useDispatch();
+  //Debounce
+  const updateSearchValue = useCallback(
+    debounce((str: string) => {
+      dispatch(setTitleFilter(str));
+    }, 500),
+    []
+  );
 
-  const handleSearchClick = () => {
-    value !== "" ? dispatch(setTitleFilter(value)) : null;
-    setValue("");
+  const handleInputValue = (e: any) => {
+    const inputValue = e.target.value;
+    setValue(inputValue);
+    updateSearchValue(inputValue);
   };
 
   return (
@@ -21,9 +31,9 @@ const ShopFind = () => {
           type="text"
           placeholder="Search by name"
           value={value}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={handleInputValue}
         />
-        <CiSearch onClick={handleSearchClick} />
+        <CiSearch />
       </form>
     </div>
   );

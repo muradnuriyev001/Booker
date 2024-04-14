@@ -7,7 +7,7 @@ const store = configureStore({
   reducer: {
     wishlist: wishlistReducer,
     cart: cartReducer,
-    filterBook: filterBookReducer,
+    bookFilter: filterBookReducer, //before bookFilter: it was filterBook (custom) and it gived error
   },
 });
 

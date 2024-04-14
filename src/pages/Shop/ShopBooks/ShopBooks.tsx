@@ -3,6 +3,8 @@ import booksData from "../../../data/books-data.json";
 import ShopBookCard from "./ShopBookCard/ShopBookCard";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectTitleFilter } from "../../../redux/slices/filterBookSlice.slice";
 
 const ShopBooks = () => {
   //Pagination logic
@@ -22,13 +24,27 @@ const ShopBooks = () => {
     }
   }, [pageId, currentPage]);
 
+  //Filter books (Search Input)
+  const titleFilter = useSelector(selectTitleFilter);
+  const filteredBooks = booksData.filter((book) => {
+    const matchedTitle = book.name
+      .toLowerCase()
+      .includes(titleFilter.title.toLowerCase());
+    return matchedTitle;
+  });
+
+  // console.log(filteredBooks);
+  // console.log(titleFilter);
+
   const indexOfLastBook = currentPage * booksPerPage;
   const indexOfFirstBook = indexOfLastBook - booksPerPage;
-  const slicedBooksData = booksData.slice(indexOfFirstBook, indexOfLastBook);
+  const slicedBooksData = filteredBooks.slice(
+    indexOfFirstBook,
+    indexOfLastBook
+  );
 
   const totalPages = Math.ceil(booksData.length / booksPerPage);
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     navigate(`/shop/page/${page}`); // Navigate to the new page
@@ -43,15 +59,17 @@ const ShopBooks = () => {
       </div>
       <div className={c.pagination}>
         <ul>
-          {pageNumbers.map((page, i) => (
-            <li
-              onClick={() => handlePageChange(page)}
-              className={currentPage === page ? c.active_page : ""}
-              key={i}
-            >
-              {page}
-            </li>
-          ))}
+          {/* if search filter field isn't empty disable pagination */}
+          {titleFilter.title.length > 0 ||
+            pageNumbers.map((page, i) => (
+              <li
+                onClick={() => handlePageChange(page)}
+                className={currentPage === page ? c.active_page : ""}
+                key={i}
+              >
+                {page}
+              </li>
+            ))}
         </ul>
       </div>
     </>
