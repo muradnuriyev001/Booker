@@ -1,15 +1,30 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import c from "./ShopRange.module.scss";
+import debounce from "lodash.debounce";
+import { useDispatch } from "react-redux";
+import { setPriceFilter } from "../../../../redux/slices/filterBookSlice.slice";
 
 const ShopRange = () => {
-  const [value, setValue] = useState(0);
+  const dispatch = useDispatch();
+  const [value, setValue] = useState(200);
+
+  const updateSearchValue = useCallback(
+    debounce((str: string) => {
+      dispatch(setPriceFilter(str));
+    }, 500),
+    []
+  );
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(Number(e.target.value));
+    const rangeValue = e.target.value;
+    setValue(Number(rangeValue));
+    updateSearchValue(rangeValue);
   };
+  console.log(value);
 
   const resetRange = () => {
-    setValue(0);
+    setValue(200);
+    dispatch(setPriceFilter(200));
   };
 
   return (

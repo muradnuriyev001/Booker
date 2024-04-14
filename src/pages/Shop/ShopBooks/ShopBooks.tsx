@@ -4,7 +4,10 @@ import ShopBookCard from "./ShopBookCard/ShopBookCard";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectTitleFilter } from "../../../redux/slices/filterBookSlice.slice";
+import {
+  selectPriceFilter,
+  selectTitleFilter,
+} from "../../../redux/slices/filterBookSlice.slice";
 
 const ShopBooks = () => {
   //Pagination logic
@@ -26,11 +29,14 @@ const ShopBooks = () => {
 
   //Filter books (Search Input)
   const titleFilter = useSelector(selectTitleFilter);
+  const priceFilter = useSelector(selectPriceFilter);
   const filteredBooks = booksData.filter((book) => {
     const matchedTitle = book.name
       .toLowerCase()
       .includes(titleFilter.title.toLowerCase());
-    return matchedTitle;
+
+    const matchedPrice = book.price < priceFilter.price;
+    return matchedTitle && matchedPrice;
   });
 
   // console.log(filteredBooks);
@@ -61,6 +67,7 @@ const ShopBooks = () => {
         <ul>
           {/* if search filter field isn't empty disable pagination */}
           {titleFilter.title.length > 0 ||
+            priceFilter.price !== 200 ||
             pageNumbers.map((page, i) => (
               <li
                 onClick={() => handlePageChange(page)}

@@ -4,9 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import { setTitleFilter } from "../../../../redux/slices/filterBookSlice.slice";
 import debounce from "lodash.debounce";
-import { useLocation } from "react-router-dom";
 const ShopFind = () => {
-  const location = useLocation();
   const [value, setValue] = useState<string>("");
 
   const dispatch = useDispatch();
