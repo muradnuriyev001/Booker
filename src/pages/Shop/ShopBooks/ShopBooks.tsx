@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {
+  selectAuthorFilter,
   selectPriceFilter,
   selectTitleFilter,
 } from "../../../redux/slices/filterBookSlice.slice";
@@ -27,16 +28,20 @@ const ShopBooks = () => {
     }
   }, [pageId, currentPage]);
 
-  //Filter books (Search Input)
+  //Filter books by title (Search Input),by price, by author
   const titleFilter = useSelector(selectTitleFilter);
   const priceFilter = useSelector(selectPriceFilter);
+  const authorFilter = useSelector(selectAuthorFilter);
   const filteredBooks = booksData.filter((book) => {
     const matchedTitle = book.name
       .toLowerCase()
       .includes(titleFilter.title.toLowerCase());
 
     const matchedPrice = book.price < priceFilter.price;
-    return matchedTitle && matchedPrice;
+    const matchedAuthor = authorFilter.author.length
+      ? authorFilter.author.includes(book.author)
+      : true;
+    return matchedTitle && matchedPrice && matchedAuthor; // true true true in initial 
   });
 
   // console.log(filteredBooks);
@@ -68,6 +73,7 @@ const ShopBooks = () => {
           {/* if search filter field isn't empty disable pagination */}
           {titleFilter.title.length > 0 ||
             priceFilter.price !== 200 ||
+            authorFilter.author.length !== 0 ||
             pageNumbers.map((page, i) => (
               <li
                 onClick={() => handlePageChange(page)}
