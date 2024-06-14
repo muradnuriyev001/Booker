@@ -41,7 +41,7 @@ const ShopBooks = () => {
     const matchedAuthor = authorFilter.author.length
       ? authorFilter.author.includes(book.author)
       : true;
-    return matchedTitle && matchedPrice && matchedAuthor; // true true true in initial 
+    return matchedTitle && matchedPrice && matchedAuthor; // true true true in initial
   });
 
   // console.log(filteredBooks);

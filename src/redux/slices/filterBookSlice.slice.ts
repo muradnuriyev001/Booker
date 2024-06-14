@@ -1,4 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import bookData from "../../data/books-data.json";
+
+const booksPrice = bookData.map((book) => book.price).sort((a, b) => a - b);
+export const maxBookPrice = booksPrice[booksPrice.length - 1];
 
 interface FilterState {
   title: string;
@@ -8,7 +12,7 @@ interface FilterState {
 
 const initialState: FilterState = {
   title: "",
-  price: 200,
+  price: maxBookPrice,
   author: [],
 };
 

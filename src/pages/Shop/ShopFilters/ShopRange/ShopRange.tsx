@@ -3,10 +3,11 @@ import c from "./ShopRange.module.scss";
 import debounce from "lodash.debounce";
 import { useDispatch } from "react-redux";
 import { setPriceFilter } from "../../../../redux/slices/filterBookSlice.slice";
-
+import { maxBookPrice } from "../../../../redux/slices/filterBookSlice.slice"; //Constant value of max price of book in data
 const ShopRange = () => {
   const dispatch = useDispatch();
-  const [value, setValue] = useState(200);
+
+  const [value, setValue] = useState(maxBookPrice);
 
   const updateSearchValue = useCallback(
     debounce((str: string) => {
@@ -20,11 +21,10 @@ const ShopRange = () => {
     setValue(Number(rangeValue));
     updateSearchValue(rangeValue);
   };
-  console.log(value);
 
   const resetRange = () => {
-    setValue(200);
-    dispatch(setPriceFilter(200));
+    setValue(maxBookPrice);
+    dispatch(setPriceFilter(maxBookPrice));
   };
 
   return (
@@ -33,7 +33,7 @@ const ShopRange = () => {
       <input
         type="range"
         min="0"
-        max="200"
+        max={maxBookPrice}
         value={value}
         onChange={handleChange}
       />
