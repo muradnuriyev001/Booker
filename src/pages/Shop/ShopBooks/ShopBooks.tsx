@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {
+  maxBookPrice,
   selectAuthorFilter,
   selectPriceFilter,
   selectTitleFilter,
@@ -72,7 +73,7 @@ const ShopBooks = () => {
         <ul>
           {/* if search filter field isn't empty disable pagination */}
           {titleFilter.title.length > 0 ||
-            priceFilter.price !== 200 ||
+            priceFilter.price !== maxBookPrice ||
             authorFilter.author.length !== 0 ||
             pageNumbers.map((page, i) => (
               <li
