@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={c.copyright}>
-        <p>Copyright © 2024 Booker | Powered by MN</p>
+        <p>Copyright © 2024 Booker | Powered by Murad Nuriyev</p>
       </div>
     </div>
   );
